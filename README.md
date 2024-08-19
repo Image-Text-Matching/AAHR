@@ -1,4 +1,4 @@
-# Learning Semantic Relationship among Instances for Image-Text Matching
+# Ambiguity-Aware and High-Order Relation Learning for Multi-Grained Image-Text Matching
 
 ![Static Badge](https://img.shields.io/badge/Pytorch-EE4C2C)
 ![License: MIT](https://img.shields.io/badge/License-Apache%202.0-yellow.svg)
