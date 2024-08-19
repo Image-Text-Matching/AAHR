@@ -10,15 +10,15 @@ We referred to the implementations of [GPO](https://github.com/woodfrog/vse_inft
 
 ## Introduction
 
-![Overview](https://github.com/Image-Text-Matching/AAHR/AAHR/blob/main/Overview.png)
+![Overview](https://github.com/Image-Text-Matching/AAHR/blob/main/Overview.png)
 
 ## Performance
 
 Our method achieves state-of-the-art results on standard benchmarks:
 
-![tab1](https://github.com/Image-Text-Matching/AAHR/AAHR/blob/main/tab1.png)
+![tab1](https://github.com/Image-Text-Matching/AAHR/blob/main/tab1.png)
 
-![tab2](https://github.com/Image-Text-Matching/AAHR/AAHR/blob/main/tab2.png)
+![tab2](https://github.com/Image-Text-Matching/AAHR/blob/main/tab2.png)
 
 We  provide the training logs and checkpoint files for two datasets:
 
@@ -38,7 +38,7 @@ We recommended the following dependencies.
 - numpy 1.23.5
 - nltk 3.7
 - tensorboard-logger 0.1.0
-- The specific required environment can be found [here](https://github.com/Image-Text-Matching/AAHR/AAHR/blob/main/requirements.txt)
+- The specific required environment can be found [here](https://github.com/Image-Text-Matching/AAHR/blob/main/requirements.txt)
 
 
 ### Data
