@@ -1,24 +1,24 @@
 # Learning Semantic Relationship among Instances for Image-Text Matching
 
 ![Static Badge](https://img.shields.io/badge/Pytorch-EE4C2C)
-![License: MIT](https://img.shields.io/badge/License-Apache 2.0-yellow.svg)
+![License: MIT](https://img.shields.io/badge/License-Apache%202.0-yellow.svg)
 
-The codes for our paper "Ambiguity-Aware and High-Order Relation Learning for Multi-Grained Image-Text Matching(AAHR)" .
+The codes for our paper "Ambiguity-Aware and High-Order Relation Learning for Multi-Grained Image-Text Matching(AAHR)".
 We referred to the implementations of [GPO](https://github.com/woodfrog/vse_infty), [HREM](https://github.com/CrossmodalGroup/HREM), and [CHAN](https://github.com/ppanzx/CHAN) to build up our codes. We extend our gratitude to these awesome works.  
 
 **Note**: The complete codebase will be made public upon acceptance of our paper.
 
 ## Introduction
 
-![Overview](C:\Users\lmy\Desktop\code\Overview.png)
+![Overview](https://github.com/Image-Text-Matching/AAHR/AAHR/blob/main/Overview.png)
 
 ## Performance
 
 Our method achieves state-of-the-art results on standard benchmarks:
 
-![tab1](C:\Users\lmy\Desktop\code\tab1.png)
+![tab1](https://github.com/Image-Text-Matching/AAHR/AAHR/blob/main/tab1.png)
 
-![tab2](C:\Users\lmy\Desktop\code\tab2.png)
+![tab2](https://github.com/Image-Text-Matching/AAHR/AAHR/blob/main/tab2.png)
 
 We  provide the training logs and checkpoint files for two datasets:
 
