@@ -1,8 +1,7 @@
 # Learning Semantic Relationship among Instances for Image-Text Matching
 
 ![Static Badge](https://img.shields.io/badge/Pytorch-EE4C2C)
-
- ![License: MIT](https://img.shields.io/badge/License-Apache 2.0-yellow.svg)
+![License: MIT](https://img.shields.io/badge/License-Apache 2.0-yellow.svg)
 
 The codes for our paper "Ambiguity-Aware and High-Order Relation Learning for Multi-Grained Image-Text Matching(AAHR)" .
 We referred to the implementations of [GPO](https://github.com/woodfrog/vse_infty), [HREM](https://github.com/CrossmodalGroup/HREM), and [CHAN](https://github.com/ppanzx/CHAN) to build up our codes. We extend our gratitude to these awesome works.  
