@@ -4,7 +4,7 @@
 ![License: MIT](https://img.shields.io/badge/License-Apache%202.0-yellow.svg)
 
 The codes for our paper ["Ambiguity-Aware and High-Order Relation Learning for Multi-Grained Image-Text Matching(AAHR)"](https://github.com/Image-Text-Matching/AAHR/blob/main/paper_AAHR.pdf), which is accepted by the Knowledge-Based Systems(KBS), 2025. 
-We referred to the implementations of [GPO](https://github.com/woodfrog/vse_infty), [HREM](https://github.com/CrossmodalGroup/HREM), and [CHAN](https://github.com/ppanzx/CHAN) to build up our codes. We extend our gratitude for these awesome works.  
+We referred to the implementations of [GPO](https://github.com/woodfrog/vse_infty), [HREM](https://github.com/CrossmodalGroup/HREM), and [eccv-caption]([https://github.com/ppanzx/CHAN](https://github.com/naver-ai/eccv-caption) to build up our codes. We extend our gratitude for these awesome works.  
 
 🚀 **Note**: We have uploaded the complete code.
 
@@ -51,6 +51,7 @@ We recommended the following dependencies.
 - numpy 1.23.5
 - nltk 3.7
 - tensorboard-logger 0.1.0
+- eccv-caption 0.1.0
 - The specific required environment can be found [here](https://github.com/Image-Text-Matching/AAHR/blob/main/requirements.txt)
 
 
@@ -138,6 +139,7 @@ To test ECCV_caption, please follow these steps:
    - Set the parameter --save_results=1
    - This will generate a results_coco.npy file
 2. Then adjust the relevant parameters as needed and run the captioning command
+   
 The required captions_val2014.json file can be downloaded from [here](https://drive.google.com/file/d/1EPOXg3-an90J_ClqWOXF3UOvXJa1_pbh/view?usp=drive_link).
 
 ```
