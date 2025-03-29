@@ -8,9 +8,6 @@ We referred to the implementations of [GPO](https://github.com/woodfrog/vse_inft
 
 🚀 **Note**: We have uploaded the complete code.
 
-~~**Note**: The complete codebase will be made public upon acceptance of our paper.~~
-
-
 ## Introduction
 Image-text matching is crucial for bridging the semantic gap between computer vision and natural language processing. However, existing methods still face challenges in handling high-order associations and semantic ambiguities among similar instances. These ambiguities arise from subtle differences between soft positive samples (semantically similar but incorrectly labeled) and soft negative samples (locally matched but globally inconsistent), creating matching uncertainties.  Furthermore, current methods fail to fully utilize the neighborhood relationships among semantically similar instances within training batches, limiting the model's ability to learn high-order shared knowledge. This paper proposes the Ambiguity-Aware and High-order Relation learning framework (AAHR) to address these issues. AAHR constructs a unified representation space through dynamic clustering prototype contrastive learning, effectively mitigating the soft positive sample problem. The framework introduces global and local feature extraction mechanisms and an adaptive aggregation network, significantly enhancing full-grained semantic understanding capabilities. Additionally, AAHR employs intra-modal and inter-modal correlation matrices to investigate neighborhood relationships among sample instances thoroughly. It incorporates GNN to enhance semantic interactions between instances. Furthermore, AAHR integrates momentum contrastive learning to expand the negative sample set. These combined strategies significantly improve the model's ability to discriminate between features. Experimental results demonstrate that AAHR outperforms existing state-of-the-art methods on Flickr30K, MSCOCO, and ECCV Caption datasets, considerably improving the accuracy and efficiency of image-text matching.
 ![Overview](https://github.com/Image-Text-Matching/AAHR/blob/main/Overview.png)
@@ -29,7 +26,7 @@ We  provide the training logs and checkpoint files for two datasets:
 - Training logs and checkpoints for [MSCOCO](https://drive.google.com/drive/folders/1LJEUUaJ7WQFZvZ4NmlOz_p_s9yO1eem3?usp=drive_link)
 
 ##  Citation
-if you find our paper and code useful in your research, please consider giving a star ⭐ and a citation 📝:
+If you find our paper and code useful in your research, please consider giving a star ⭐ and a citation 📝:
 ```
 @article{chen2025ambiguity,
   title={Ambiguity-Aware and High-Order Relation Learning for Multi-Grained Image-Text Matching},
@@ -68,7 +65,8 @@ data
 │   │      ├── train_ids.txt
 │   │      ├── train_caps.txt
 │   │      ├── ......
-│   │
+│   │── id_mapping.json
+│   │── captions_val2014.json
 │   ├── images   # raw coco images
 │        ├── train2014
 │        └── val2014
@@ -78,7 +76,7 @@ data
 │   │      ├── train_ids.txt
 │   │      ├── train_caps.txt
 │   │      ├── ......
-│   │
+│   │── id_mapping.json
 │   ├── flickr30k-images   # raw flickr30k images
 │          ├── xxx.jpg
 │          └── ...
@@ -86,7 +84,7 @@ data
 └── vocab  # vocab files provided by SCAN (only used when the text backbone is BiGRU)
 
 AAHR
-├── bert-base-uncased    # the pretrained checkpoint files for BERT-base
+├── bert-base-uncased    # the pre-trained checkpoint files for BERT-base
 │   ├── config.json
 │   ├── tokenizer_config.txt
 │   ├── vocab.txt
@@ -134,5 +132,15 @@ python eval.py  --dataset f30k  --data_path "path/to/dataset"
 
 ```
 python eval.py  --dataset coco --data_path "path/to/dataset"
+```
+To test ECCV_caption, please follow these steps:
+1. First, execute eval.py to test the MSCOCO pre-trained model
+   - Set the parameter --save_results=1
+   - This will generate a results_coco.npy file
+2. Then adjust the relevant parameters as needed and run the captioning command
+The required captions_val2014.json file can be downloaded from [here](https://drive.google.com/file/d/1EPOXg3-an90J_ClqWOXF3UOvXJa1_pbh/view?usp=drive_link).
+
+```
+python eccv_caption_test.py
 ```
 
