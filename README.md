@@ -136,8 +136,8 @@ python eval.py  --dataset coco --data_path "path/to/dataset"
 ```
 To test ECCV_caption, please follow these steps:
 1. First, execute eval.py to test the MSCOCO pre-trained model
-   - Set the parameter --save_results=1
-   - This will generate a results_coco.npy file
+   -  Set the parameter --save_results=1
+   -  This will generate a results_coco.npy file
 2. Then adjust the relevant parameters as needed and run the captioning command
    
 The required captions_val2014.json file can be downloaded from [here](https://drive.google.com/file/d/1EPOXg3-an90J_ClqWOXF3UOvXJa1_pbh/view?usp=drive_link).
