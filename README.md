@@ -3,7 +3,7 @@
 ![Static Badge](https://img.shields.io/badge/Pytorch-EE4C2C)
 ![License: MIT](https://img.shields.io/badge/License-Apache%202.0-yellow.svg)
 
-The codes for our paper "Ambiguity-Aware and High-Order Relation Learning for Multi-Grained Image-Text Matching(AAHR)", which is accepted by the Knowledge-Based Systems(KBS), 2025. 
+The codes for our paper ["Ambiguity-Aware and High-Order Relation Learning for Multi-Grained Image-Text Matching(AAHR)"](https://github.com/Image-Text-Matching/AAHR/blob/main/paper_AAHR.pdf), which is accepted by the Knowledge-Based Systems(KBS), 2025. 
 We referred to the implementations of [GPO](https://github.com/woodfrog/vse_infty), [HREM](https://github.com/CrossmodalGroup/HREM), and [CHAN](https://github.com/ppanzx/CHAN) to build up our codes. We extend our gratitude for these awesome works.  
 
 **Note**: We have uploaded the complete code.
