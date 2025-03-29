@@ -123,4 +123,13 @@ python eval.py  --dataset coco --data_path "path/to/dataset"
 ```
 
 ##  Citation
-
+```
+@article{chen2025ambiguity,
+  title={Ambiguity-Aware and High-Order Relation Learning for Multi-Grained Image-Text Matching},
+  author={Chen, Junyu and Gao, Yihua and Ge, Mingyuan and Li, Mingyong},
+  journal={Knowledge-Based Systems},
+  pages={113355},
+  year={2025},
+  publisher={Elsevier}
+}
+```
