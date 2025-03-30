@@ -28,7 +28,7 @@ We  provide the training logs and checkpoint files for two datasets:
 ##  Citation
 If you find our paper and code useful in your research, please consider giving a star ⭐ and a citation 📝:
 ```
-@article{chen2025ambiguity,
+@article{chen2025AAHR,
   title={Ambiguity-Aware and High-Order Relation Learning for Multi-Grained Image-Text Matching},
   author={Chen, Junyu and Gao, Yihua and Ge, Mingyuan and Li, Mingyong},
   journal={Knowledge-Based Systems},
